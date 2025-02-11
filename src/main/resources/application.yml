@@ -1,4 +1,12 @@
 spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            scope:
+              - email
+              - profile
   h2:
     console:
       enabled: true
@@ -9,7 +17,7 @@ spring:
     password:
   jpa:
     hibernate:
-      ddl-auto: create
+      ddl-auto: update
 
 jwt:
   issuer: rexlam@naver.com
